@@ -1,0 +1,42 @@
+Marcielle de Paula Jorge
+Email: marcielle0644@gmail.com
+Nationality: Brazilian
+Age: 26 years
+Gender: Female
+Address: Fortaleza, CE
+
+Academic Background
+Course: Computer Science
+Institution: UVA
+Graduation: 2022
+
+Experience
+
+Position: Junior Developer
+Company: Ecorreção e Serviços
+Period: 2023
+Responsibilities:
+
+Developed new features to optimize the correction of essays through the Ecorreção system.
+Maintained the system using APIs, ensuring efficient integration between different services.
+Documented APIs and workflows using Swagger, ensuring clear and precise communication between developers.
+Used the Vue.js framework to develop interactive and responsive user interfaces.
+Focused on continuous improvement of the system's performance and implemented best development practices such as code standards, constant refactoring, and automated testing to ensure software quality and scalability.
+Position: Audit and Development Manager
+Company: Prefeitura de Sobral
+Period: 2023 - 2024
+Responsibilities:
+
+Responsible for the maintenance and improvement of a QR Code-based evaluation system developed with the Laravel framework and Bootstrap. The system allows for the evaluation of healthcare facilities, generating detailed reports with the assigned ratings.
+Acted in the integration of new features and the use of specialized packages for automated report generation, ensuring greater efficiency and precision in data analysis.
+Developed Python scripts for report generation and implemented audits using the R programming language.
+Position: Developer
+Company: SindSystem
+Period: 2024 - Present
+Responsibilities:
+
+Currently working on a union management system using Laravel as the backend framework, Bootstrap for styling, and jQuery for frontend manipulation.
+Utilized APIs to integrate functionalities into the system.
+Developed the Reports module to provide detailed reports on contributions, associated active members, delinquencies, etc.
+Implemented data export features to Excel, CSV, and PDF.
+Created interactive dashboards with charts (e.g., Chart.js, ApexCharts).
