@@ -5,41 +5,90 @@ import Header from "./components/Header";
 import TeamMember from "./components/TeamMember";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+
+import "./App.css"; 
+
 function App() {
   const teamMembers = [
     {
       id: 1,
       name: "Bárbara Machado",
       role: "Atriz",
-      description:
-        "Bárbara encanta o público com sua interpretação intensa e carisma no palco.",
-      imageUrl: "/images/babs.jpeg",
+      description: "Bárbara encanta o público com sua interpretação intensa e carisma no palco.",
+      imageUrl: "/img/babs.jpeg",
     },
     {
       id: 2,
       name: "Bia Berretta",
       role: "Atriz",
-      description:
-        "Bia traz emoção e profundidade a cada personagem que interpreta.",
-      imageUrl: "/images/beta.jpeg",
+      description: "Bia traz emoção e profundidade a cada personagem que interpreta.",
+      imageUrl: "/img/beta.jpeg",
     },
     {
       id: 3,
       name: "Crisnaldo Prado",
       role: "Ator",
-      description:
-        "Crisnaldo é conhecido por sua versatilidade e presença de palco marcante.",
-      imageUrl: "/images/cris.jpeg",
+      description: "Crisnaldo é conhecido por sua versatilidade e presença de palco marcante.",
+      imageUrl: "/img/crisnaldo.jpeg",
     },
     {
       id: 4,
       name: "Edimara Arcanjo",
       role: "Atriz",
-      description:
-        "Edimara impressiona com sua entrega e talento em cada performance.",
-      imageUrl: "/images/edmara.jpeg",
+      description: "Edimara impressiona com sua entrega e talento em cada performance.",
+      imageUrl: "/img/edmara.jpeg",
+    },
+    {
+      id: 5,
+      name: "Emília",
+      role: "Atriz",
+      description: "Emília se destaca pela sua habilidade em criar personagens complexos e emocionantes.",
+      imageUrl: "/img/emilia.jpeg",
+    },
+    {
+      id: 6,
+      name: "Mari Madu",
+      role: "Atriz",
+      description: "Mari Madu cativa com sua expressividade e capacidade de emocionar o público.",
+      imageUrl: "/img/madu.jpeg",
+    },
+    {
+      id: 7,
+      name: "Marcielle de Paula",
+      role: "Atriz",
+      description: "Marcielle encanta pela sua energia vibrante e pela profundidade das suas atuações.",
+      imageUrl: "/img/marcielle.jpeg",
+    },
+    {
+      id: 8,
+      name: "May",
+      role: "Atriz",
+      description: "May é conhecida pela sua paixão e dedicação ao teatro, sempre entregando performances intensas.",
+      imageUrl: "/img/may.jpeg",
+    },
+    {
+      id: 9,
+      name: "Renan Martins",
+      role: "Ator",
+      description: "Renan traz emoção e autenticidade para cada personagem que interpreta.",
+      imageUrl: "/img/renan.jpeg",
+    },
+    {
+      id: 10,
+      name: "Sabriny Miranda",
+      role: "Atriz",
+      description: "Sabriny emociona com sua interpretação profunda e cheia de nuances.",
+      imageUrl: "/img/sabriny.jpeg",
+    },
+    {
+      id: 11,
+      name: "Wanessa Kellen",
+      role: "Atriz",
+      description: "Wanessa é uma atriz de grande talento e presença, capaz de cativar qualquer plateia.",
+      imageUrl: "/img/wanessa.jpeg",
     },
   ];
+  
 
   const performances = [
     {
@@ -68,7 +117,7 @@ function App() {
         <NavBar />
         <Header />
         <main className="flex-grow bg-gray-50 py-10 px-6">
-          {/* ABOUT THE GROUP, TEAM MEMBERS, PERFORMANCES */}
+     
           <section className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Sobre o Grupo</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -119,7 +168,6 @@ function App() {
       </div>
 
       <Routes>
-        {/* Pass `teamMembers` as prop to ActorDetails */}
         <Route path="/actor/:id" element={<ActorDetails teamMembers={teamMembers} />} />
       </Routes>
     </Router>

@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-[#002B36] text-white py-4 px-6 flex items-center justify-between">
-      {/* Logo */}
+    <nav className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 text-white py-4 px-6 flex items-center justify-between shadow-lg">
+ 
       <div className="flex items-center">
         <img
-          src="https://your-logo-url.com/logo.png" 
+          src="img/logo.jpeg" 
           alt="Logo"
-          className="h-12 w-auto"
+          className="h-20 w-auto rounded-full"
         />
       </div>
 
-      {/* Navigation Links */}
+     
       <div className="hidden md:flex space-x-6">
         {["Schedule", "About", "The Spirit Room", "Weddings & Rentals", "Support"].map(
           (item, index) => (
             <a
               key={index}
               href={`/${item.toLowerCase().replace(/\s/g, "-")}`}
-              className="text-lg hover:text-gray-300 transition"
+              className="text-black font-bold py-2 px-4 hover:bg-orange-500 transition duration-300 hidden md:inline-block"
+
+ 
             >
               {item}
             </a>
@@ -27,13 +32,46 @@ const NavBar = () => {
         )}
       </div>
 
-
+  
       <a
         href="/buy-tickets"
-        className="bg-[#D1A677] text-black font-bold py-2 px-4 rounded-full hover:bg-[#b98b5c] transition"
+        className=" text-black font-bold py-2 px-4 rounded-full  transition hidden md:inline-block"
       >
         Buy Tickets
       </a>
+
+  
+      <button
+        className="md:hidden text-yellow-400 text-3xl"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-[#002B36] flex flex-col items-center py-4 space-y-4 md:hidden">
+          {["Schedule", "About", "The Spirit Room", "Weddings & Rentals", "Support"].map(
+            (item, index) => (
+              <a
+                key={index}
+                href={`/${item.toLowerCase().replace(/\s/g, "-")}`}
+                className="text-lg text-yellow-400 hover:text-orange-400 transition"
+              >
+                {item}
+              </a>
+            )
+          )}
+
+       
+          <a
+            href="/buy-tickets"
+            className="bg-white text-black font-bold py-2 px-4 rounded-full hover:bg-orange-500 transition"
+          >
+            Buy Tickets
+          </a>
+        </div>
+      )}
     </nav>
   );
 };
