@@ -4,15 +4,14 @@ import TeamMember from "../components/TeamMember";
 
 
 const performances = [
-  { title: "A Última Cena", description: "Uma peça emocionante...", imageUrl: "/images/ultima-cena.jpg" },
-  { title: "O Enigma do Palco", description: "Um thriller teatral...", imageUrl: "/images/enigma-palco.jpg" },
-  { title: "Sonhos de um Artista", description: "Um espetáculo envolvente...", imageUrl: "/images/sonhos-artista.jpg" },
+  { title: "A Última Cena", description: "Uma peça emocionante...", imageUrl: "/img/espetaculocurral.jpeg" },
+  { title: "O Enigma do Palco", description: "Um thriller teatral...", imageUrl: "/img/espetaculocurral2.jpeg" },
+  { title: "Sonhos de um Artista", description: "Um espetáculo envolvente...", imageUrl: "/img/espetaculocurral1.jpeg" },
 ];
 
 
 
 const Home = (teamMembers) => {
-  console.log(teamMembers)
   return (
     <div>
     <header className="relative text-white text-center overflow-hidden" style={{ height: '80vh' }}>
@@ -20,31 +19,29 @@ const Home = (teamMembers) => {
  
 <div className="flex w-full h-full">
 
-  <div className="w-1/3">
-    <img
-      src="img/imge.JPG" 
-   
-      className="w-full h-full object-cover shadow-lg"
-    />
-  </div>
+<div className="w-1/3">
+            <img
+              src="nambu/curral3.jpeg" 
+              alt="Description of the first image" 
+              className="w-full h-full object-cover shadow-lg"
+            />
+          </div>
   
-
-  <div className="w-1/3">
-    <img
-      src="img/image2.jpeg" 
+          <div className="w-1/3">
+            <img
+              src="nambu/curral.jpeg" 
+              alt="Description of the second image" 
+              className="w-full h-full object-cover shadow-lg"
+            />
+          </div>
   
-      className="w-full h-full object-cover shadow-lg"
-    />
-  </div>
-
-
-  <div className="w-1/3">
-    <img
-      src="img/image1.jpeg" 
-     
-      className="w-full h-full object-cover shadow-lg"
-    />
-  </div>
+          <div className="w-1/3">
+            <img
+              src="nambu/curral2.JPG" 
+              alt="Description of the third image" 
+              className="w-full h-full object-cover shadow-lg"
+            />
+          </div>
 </div>
 
 

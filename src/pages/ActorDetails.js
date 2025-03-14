@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const ActorDetails = ({ teamMembers }) => {
   const { id } = useParams();
 
-  // Check if teamMembers data is valid
+
   if (!Array.isArray(teamMembers) || teamMembers.length === 0) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -14,10 +14,10 @@ const ActorDetails = ({ teamMembers }) => {
     );
   }
 
-  // Find the actor by id
+
   const actor = teamMembers.find((member) => member.id === Number(id));
 
-  // Handle case if actor is not found
+
   if (!actor) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
