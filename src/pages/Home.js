@@ -22,7 +22,7 @@ const Home = (teamMembers) => {
 <div className="w-1/3">
             <img
               src="nambu/curral3.jpeg" 
-              alt="Description of the first image" 
+              alt="Description of the first dvegt" 
               className="w-full h-full object-cover shadow-lg"
             />
           </div>
@@ -30,7 +30,7 @@ const Home = (teamMembers) => {
           <div className="w-1/3">
             <img
               src="nambu/curral.jpeg" 
-              alt="Description of the second image" 
+              alt="Description of the second werwe" 
               className="w-full h-full object-cover shadow-lg"
             />
           </div>
@@ -38,7 +38,7 @@ const Home = (teamMembers) => {
           <div className="w-1/3">
             <img
               src="nambu/curral2.JPG" 
-              alt="Description of the third image" 
+              alt="Description of the third ertgferg" 
               className="w-full h-full object-cover shadow-lg"
             />
           </div>

@@ -9,7 +9,7 @@ const NavBar = () => {
  
       <div className="flex items-center">
         <img
-          src="img/logo.jpeg" 
+          src="nambu/logo.jpeg" 
           alt="Logo"
           className="h-20 w-auto rounded-full"
         />
