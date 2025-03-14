@@ -2,19 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TeamMember from "../components/TeamMember";
 
-const teamMembers = [
-  { id: 1, name: "Bárbara Machado", role: "Atriz", description: "Bárbara encanta o público...", imageUrl: "/img/babs.jpeg" },
-  { id: 2, name: "Bia Berretta", role: "Atriz", description: "Bia traz emoção...", imageUrl: "/img/beta.jpeg" },
-  { id: 3, name: "Crisnaldo Prado", role: "Ator", description: "Crisnaldo é conhecido...", imageUrl: "/img/crisnaldo.jpeg" },
-  { id: 4, name: "Edimara Arcanjo", role: "Atriz", description: "Edimara impressiona...", imageUrl: "/img/edmara.jpeg" },
-  { id: 5, name: "Emília", role: "Atriz", description: "Emília se destaca...", imageUrl: "/img/emilia.jpeg" },
-  { id: 6, name: "Mari Madu", role: "Atriz", description: "Mari Madu cativa...", imageUrl: "/img/madu.jpeg" },
-  { id: 7, name: "Marcielle de Paula", role: "Atriz", description: "Marcielle encanta...", imageUrl: "/img/marcielle.jpeg" },
-  { id: 8, name: "May", role: "Atriz", description: "May é conhecida...", imageUrl: "/img/may.jpeg" },
-  { id: 9, name: "Renan Martins", role: "Ator", description: "Renan traz emoção...", imageUrl: "/img/renan.jpeg" },
-  { id: 10, name: "Sabriny Miranda", role: "Atriz", description: "Sabriny emociona...", imageUrl: "/img/sabriny.jpeg" },
-  { id: 11, name: "Wanessa Kellen", role: "Atriz", description: "Wanessa é uma atriz...", imageUrl: "/img/wanessa.jpeg" },
-];
 
 const performances = [
   { title: "A Última Cena", description: "Uma peça emocionante...", imageUrl: "/images/ultima-cena.jpg" },
@@ -24,7 +11,8 @@ const performances = [
 
 
 
-const Home = () => {
+const Home = (teamMembers) => {
+  console.log(teamMembers)
   return (
     <div>
     <header className="relative text-white text-center overflow-hidden" style={{ height: '80vh' }}>
@@ -35,7 +23,7 @@ const Home = () => {
   <div className="w-1/3">
     <img
       src="img/imge.JPG" 
-      alt="First Image"
+   
       className="w-full h-full object-cover shadow-lg"
     />
   </div>
@@ -44,7 +32,7 @@ const Home = () => {
   <div className="w-1/3">
     <img
       src="img/image2.jpeg" 
-      alt="Second Image"
+  
       className="w-full h-full object-cover shadow-lg"
     />
   </div>
@@ -53,7 +41,7 @@ const Home = () => {
   <div className="w-1/3">
     <img
       src="img/image1.jpeg" 
-      alt="Third Image"
+     
       className="w-full h-full object-cover shadow-lg"
     />
   </div>
@@ -81,7 +69,7 @@ const Home = () => {
           Conheça nossos integrantes
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {teamMembers.map((member) => (
+          {teamMembers.teamMembers.map((member) => (
             <div key={member.id} className="bg-white p-6 rounded-lg shadow-lg">
               <Link to={`/actor/${member.id}`}>
                 <TeamMember {...member} />

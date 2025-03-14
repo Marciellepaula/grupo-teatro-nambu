@@ -9,23 +9,21 @@ const TeamMember = ({ name, role, description, imageUrl }) => {
         alt={name}
         className="w-full h-48 object-cover rounded-t-lg transition-all duration-300 transform hover:scale-110"
       />
-      
-    
       <div className="p-4">
         <h3 className="text-2xl font-semibold text-gray-900 hover:text-yellow-500 transition duration-300">{name}</h3>
         <p className="text-md text-gray-600 italic">{role}</p>
-        <p className="mt-2 text-gray-700 text-lg">{description}</p>
-      </div>
-      
-   
-      <div className="mt-4 text-center">
-        <a
-          href="#"
-          className="bg-yellow-500 text-black py-2 px-6 rounded-full hover:bg-orange-500 transition duration-300"
-        >
-          Contact
-        </a>
-      </div>
+        <p
+            className="mt-2 text-gray-700 text-lg"
+                  style={{
+                  display: "-webkit-box",
+                   WebkitBoxOrient: "vertical",
+                   WebkitLineClamp: 3,
+                   overflow: "hidden",
+            }}
+            >
+                {description}
+           </p>
+      </div>      
     </div>
   );
 };

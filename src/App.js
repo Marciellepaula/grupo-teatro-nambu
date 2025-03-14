@@ -19,7 +19,7 @@ function App() {
           <Suspense fallback={<div className="text-center py-10">Carregando...</div>}>
             <Routes>
          
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home teamMembers={teamMembers} />} />
               <Route path="/actor/:id" element={<ActorDetails  teamMembers={teamMembers}/>} />
               <Route path="/login" element={<Auth />} />
             </Routes>
