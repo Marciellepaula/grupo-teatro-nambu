@@ -76,18 +76,23 @@ const Home = (teamMembers) => {
         </div>
       </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Nossos Espetáculos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {performances.map((performance, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-              <img src={performance.imageUrl} alt={performance.title} className="w-full h-56 object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">{performance.title}</h3>
-              <p className="mt-2 text-gray-700">{performance.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="mb-16">
+  <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Nossos Espetáculos</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+    {performances.map((performance, index) => (
+      <div key={index} className="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+        <img 
+          src={performance.imageUrl} 
+          alt={performance.title}  // Removed redundant "image" or "photo"
+          className="w-full h-72 object-cover rounded-t-lg shadow-md transition-transform transform hover:scale-110 duration-300"
+        />
+        <h3 className="text-2xl font-semibold mt-6 text-gray-800">{performance.title}</h3>
+        <p className="mt-2 text-lg text-gray-600">{performance.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
     </main>
     </div>
   );
