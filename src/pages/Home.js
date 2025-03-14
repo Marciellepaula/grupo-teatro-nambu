@@ -4,9 +4,9 @@ import TeamMember from "../components/TeamMember";
 
 
 const performances = [
-  { title: "A Última Cena", description: "Uma peça emocionante...", imageUrl: "/img/espetaculocurral.jpeg" },
-  { title: "O Enigma do Palco", description: "Um thriller teatral...", imageUrl: "/img/espetaculocurral2.jpeg" },
-  { title: "Sonhos de um Artista", description: "Um espetáculo envolvente...", imageUrl: "/img/espetaculocurral1.jpeg" },
+  { title: "A Última Cena", description: "Uma peça emocionante...", imageUrl: "/nambu/espetaculocurral.jpeg" },
+  { title: "O Enigma do Palco", description: "Um thriller teatral...", imageUrl: "/nambu/espetaculocurral2.jpeg" },
+  { title: "Sonhos de um Artista", description: "Um espetáculo envolvente...", imageUrl: "/nambu/espetaculocurral1.jpeg" },
 ];
 
 
