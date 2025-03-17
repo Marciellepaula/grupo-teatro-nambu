@@ -52,16 +52,20 @@ const Home = (teamMembers) => {
   </div>
 </div>
 </header>
-    <main className="flex-grow bg-gray-50 py-10 px-6">
+
+<section>
+
+</section>
+    <main  className="flex-grow bg-gray-50 py-10 px-6">
       
-      <section className="text-center mb-12">
+      <section  id ="1" className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Sobre o Grupo</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           O Grupo de Teatro Nambu é uma companhia dedicada à arte dramática...
         </p>
       </section>
 
-      <section className="mb-12">
+      <section id ="2" className="mb-12" >
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Conheça nossos integrantes
         </h2>
@@ -76,20 +80,27 @@ const Home = (teamMembers) => {
         </div>
       </section>
 
-      <section className="mb-16">
+      <section className="mb-16" id ="3">
   <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Nossos Espetáculos</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
     {performances.map((performance, index) => (
       <div key={index} className="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
         <img 
           src={performance.imageUrl} 
-          alt={performance.title}  // Removed redundant "image" or "photo"
+          alt={performance.title}  
           className="w-full h-72 object-cover rounded-t-lg shadow-md transition-transform transform hover:scale-110 duration-300"
         />
         <h3 className="text-2xl font-semibold mt-6 text-gray-800">{performance.title}</h3>
         <p className="mt-2 text-lg text-gray-600">{performance.description}</p>
       </div>
     ))}
+  </div>
+</section>
+
+<section className="mb-16" id ="4">
+  <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Agenda</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+  
   </div>
 </section>
 
