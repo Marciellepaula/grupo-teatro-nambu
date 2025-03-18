@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TeamMember from "../components/TeamMember";
+import { performances } from "../data/performace";
 
 
-const performances = [
-  { title: "A Última Cena", description: "Uma peça emocionante...", imageUrl: "/nambu/espetaculocurral.jpeg" },
-  { title: "O Enigma do Palco", description: "Um thriller teatral...", imageUrl: "/nambu/espetaculocurral2.jpeg" },
-  { title: "Sonhos de um Artista", description: "Um espetáculo envolvente...", imageUrl: "/nambu/espetaculocurral1.jpeg" },
-];
 
 
 
@@ -85,6 +81,7 @@ const Home = (teamMembers) => {
   <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Nossos Espetáculos</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
     {performances.map((performance, index) => (
+
       <Link 
         key={performance.id} 
         to={`/show/${performance.id}`} 
