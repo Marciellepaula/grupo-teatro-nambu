@@ -21,9 +21,9 @@ const Show = ({ performances }) => {
 
   const images = [
     '/nambu/espetaculocurral.jpeg',
-    '/nambu/espetaculocurral.jpeg',
-    '/nambu/espetaculocurral.jpeg',
-    '/nambu/espetaculocurral.jpeg',
+    '/nambu/imge.JPG',
+    '/nambu/madu.jpeg',
+    '/nambu/curral4.jpeg',
   ];
 
   const openModal = (image) => {
@@ -55,8 +55,8 @@ const Show = ({ performances }) => {
       </section>
 
       <section
-        className="relative w-full h-[550px] bg-cover bg-center flex items-center justify-center text-white text-4xl font-bold"
-        style={{ backgroundImage: `url(/nambu/espetaculocurral.jpeg)` }}
+        className="relative w-full h-[650px] bg-cover bg-center flex items-center justify-center text-white text-4xl font-bold"
+        style={{ backgroundImage: `url(/nambu/espetaculocurral2.jpeg)` }}
       >
       </section>
 
@@ -107,38 +107,40 @@ Wanessa Kellen</p>
 
 
 <div>
-      <section className="py-12 px-4 max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Cena ${index + 1}`}
-              className="w-full h-auto rounded-lg shadow-md cursor-pointer"
-              onClick={() => openModal(image)}
-            />
-          ))}
-        </div>
-      </section>
+<section className="py-12 px-5 max-w-7xl mx-auto">
+  <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    {images.map((image, index) => (
+      <img
+        key={index}
+        src={image}
+        alt={`Cena ${index + 1}`}
+        className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-md cursor-pointer"
+        onClick={() => openModal(image)}
+      />
+    ))}
+  </div>
+</section>
 
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
-          <div className="relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-0 right-0 bg-white text-black rounded-full p-2"
-            >
-              X
-            </button>
-            <img
-              src={selectedImage}
-              alt="Imagem selecionada"
-              className="max-w-full max-h-full"
-            />
-          </div>
-        </div>
-      )}
+
+  {isModalOpen && (
+    <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
+      <div className="relative">
+        <button
+          onClick={closeModal}
+          className="absolute top-0 right-0 bg-white text-black rounded-full p-2"
+        >
+          X
+        </button>
+        <img
+          src={selectedImage}
+          alt="Imagem selecionada"
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
     </div>
+  )}
+</div>
+
     </div>
   );
 };
