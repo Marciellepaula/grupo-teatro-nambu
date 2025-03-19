@@ -4,9 +4,6 @@ import TeamMember from "../components/TeamMember";
 import { performances } from "../data/performace";
 
 
-
-
-
 const Home = (teamMembers) => {
   return (
     <div>
