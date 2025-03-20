@@ -19,12 +19,6 @@ const Show = ({ performances }) => {
   }
 
 
-  const images = [
-    '/nambu/espetaculocurral.jpeg',
-    '/nambu/imge.JPG',
-    '/nambu/madu.jpeg',
-    '/nambu/curral4.jpeg',
-  ];
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -40,7 +34,7 @@ const Show = ({ performances }) => {
     <div className="w-full">
       <section
         className="relative w-full h-[550px] bg-cover bg-center flex items-center justify-center text-white text-4xl font-bold"
-        style={{ backgroundImage: `url(/nambu/espetaculocurral.jpeg)` }}
+        style={{ backgroundImage: `url(/nambu/imge.JPG)` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1>{show.title}</h1>
@@ -109,7 +103,7 @@ Wanessa Kellen</p>
 <div>
 <section className="py-12 px-5 max-w-7xl mx-auto">
   <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-    {images.map((image, index) => (
+    {show.images.map((image, index) => (
       <img
         key={index}
         src={image}

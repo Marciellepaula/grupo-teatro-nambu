@@ -17,7 +17,6 @@ export const teamMembers = [
       imageUrl: "/nambu/beta.jpeg", 
       age: 21, 
       experience: "8 anos de carreira", 
-
     },
     { 
       id: 3, 
@@ -37,7 +36,6 @@ export const teamMembers = [
       imageUrl: "/nambu/edmara.jpeg", 
       age: 21, 
       experience: "12 anos de carreira", 
-  
     },
     { 
       id: 5, 
