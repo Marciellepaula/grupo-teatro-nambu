@@ -106,6 +106,17 @@ export const teamMembers = [
       age: 21, 
       experience: "6 anos de carreira", 
    
+    },
+
+    { 
+      id: 12, 
+      name: "Virginia Oliveira", 
+      role: "Diretora", 
+      description: "Virginia Oliveira é uma atriz com uma habilidade única de trazer à tona as emoções mais sutis de seus personagens. Ela se destaca tanto em papéis dramáticos quanto em comédias, sempre com grande naturalidade e dedicação. Com uma carreira promissora, ela é uma das mais talentosas da nova geração.", 
+      imageUrl: "/nambu/virginia.png", 
+      age: 21, 
+      experience: "10 anos de carreira", 
+   
     }
   ];
   

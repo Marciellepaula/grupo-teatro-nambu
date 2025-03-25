@@ -4,8 +4,21 @@ import TeamMember from "../components/TeamMember";
 import { performances } from "../data/performace";
 
 
+import { fetchActors } from '../services/api';
+import { useFetch } from '../hooks/useFetch';
+
 const Home = (teamMembers) => {
+
+  const { data: actors, loading, error } = useFetch(fetchActors);
+
+  console.log(actors);
+  if (loading) return <p>Carregando...</p>;
+  if (error) return <p>Erro ao buscar atores</p>;
+
+
   return (
+
+    
     <div>
     <header className="relative text-white text-center overflow-hidden" style={{ height: '80vh' }}>
       
