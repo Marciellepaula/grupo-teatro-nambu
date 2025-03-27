@@ -67,7 +67,7 @@ const Home = (teamMembers) => {
       <section  id ="1" className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Sobre o Grupo</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          O Grupo de Teatro Nambu é uma companhia dedicada à arte dramática...
+        O Grupo de Teatro Nambu é um centro de produção cultural e um espaço independente dedicado ao desenvolvimento e à troca de experiências entre artistas locais. Comprometido com a valorização e a continuidade da cena cultural de Sobral, o grupo promove ações que incentivam a criatividade e a expressão artística, encenando peças que retratam eventos históricos do estado, do Brasil e diversas outras temáticas que dialogam com a sociedade.
         </p>
       </section>
 
