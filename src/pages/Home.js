@@ -33,7 +33,7 @@ const Home = (teamMembers) => {
             />
           </div>
   
-          <div className="w-1/3">63891364.png
+          <div className="w-1/3">
             <img
               src="nambu/curral.jpeg" 
               alt="Description of the second werwe" 
