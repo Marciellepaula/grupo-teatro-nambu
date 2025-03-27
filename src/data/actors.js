@@ -62,7 +62,7 @@ export const teamMembers = [
       name: "Marcielle de Paula", 
       role: "Atriz", 
       description: "Marcielle encanta com sua autenticidade e habilidade de trazer personagens complexos à vida. Sua carreira está em ascensão, e ela se destaca pelo seu talento natural e presença marcante. Sempre fiel ao seu ofício, ela é uma das grandes promessas da dramaturgia.", 
-      imageUrl: "/nambu/marcielle.jpeg", 
+      imageUrl: "/nambu/63891364.png", 
       age: 27, 
       experience: "5 anos de carreira", 
    

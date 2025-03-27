@@ -27,13 +27,13 @@ const Home = (teamMembers) => {
 
 <div className="w-1/3">
             <img
-              src="nambu/curral3.jpeg" 
+              src="nambu/IMG_5950 (1).JPG" 
               alt="Description of the first dvegt" 
               className="w-full h-full object-cover shadow-lg"
             />
           </div>
   
-          <div className="w-1/3">
+          <div className="w-1/3">63891364.png
             <img
               src="nambu/curral.jpeg" 
               alt="Description of the second werwe" 
